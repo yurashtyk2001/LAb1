@@ -1,0 +1,51 @@
+﻿  Source.cpp
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(230,14): error C2065: 'uint': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(230,19): error C2146: syntax error: missing ';' before identifier 'i'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(230,21): error C2143: syntax error: missing ';' before '='
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(230,21): error C2143: syntax error: missing ')' before '='
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(230,21): error C2059: syntax error: '='
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(230,26): error C2065: 'i': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(230,50): error C2065: 'i': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(230,51): error C2059: syntax error: ')'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(231,13): error C2059: syntax error: 'if'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(231,46): error C2143: syntax error: missing ';' before '{'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(234,13): error C2181: illegal else without matching if
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(234,32): error C2065: 'i': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(234,47): error C2065: 'i': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(240,5): error C2059: syntax error: 'if'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(240,63): error C2143: syntax error: missing ';' before '{'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(240,63): error C2447: '{': missing function header (old-style formal list?)
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(254,5): error C2059: syntax error: 'return'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(255,1): error C2059: syntax error: '}'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(255,1): error C2143: syntax error: missing ';' before '}'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(258,1): error C2143: syntax error: missing ';' before '{'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(258,1): error C2447: '{': missing function header (old-style formal list?)
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(291,14): error C2065: 'uint': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(291,19): error C2146: syntax error: missing ';' before identifier 'i'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(291,21): error C2143: syntax error: missing ';' before '='
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(291,21): error C2143: syntax error: missing ')' before '='
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(291,21): error C2059: syntax error: '='
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(291,26): error C2065: 'i': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(291,46): error C2065: 'i': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(291,47): error C2059: syntax error: ')'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(292,13): error C2062: type 'int' unexpected
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(294,21): error C2065: 'x': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(295,13): error C2065: 'x': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(295,17): error C2065: 'x': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(296,49): error C2065: 'x': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(299,13): error C2065: 'carry': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(300,48): error C2065: 'carry': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(304,5): error C2059: syntax error: 'else'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(304,10): error C2143: syntax error: missing ';' before '{'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(304,10): error C2447: '{': missing function header (old-style formal list?)
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(324,5): error C2059: syntax error: 'while'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(324,63): error C2143: syntax error: missing ';' before '{'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(324,63): error C2447: '{': missing function header (old-style formal list?)
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(327,13): error C2065: 'res': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(327,30): error C2065: 'res': undeclared identifier
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(327,43): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(329,5): error C2059: syntax error: 'return'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(330,1): error C2059: syntax error: '}'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(330,1): error C2143: syntax error: missing ';' before '}'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(332,59): error C2143: syntax error: missing ';' before '{'
+E:\NOStudy\LABASROM1\LABASROM1\Source.cpp(332,59): error C2447: '{': missing function header (old-style formal list?)
