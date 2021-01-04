@@ -59,7 +59,8 @@ public:
     friend std::ostream& operator<<(std::ostream& out, const LongLong& x);
     ~LongLong();
 };
-LongLong gcd(const LongLong& n1, const LongLong& n2);
-LongLong lcm(const LongLong& n1, const LongLong& n2);
+
+LongLong gcd(LongLong n1, LongLong n2);
+LongLong lcm(LongLong n1, LongLong n2);
 
 #endif  // LONGLONG_H

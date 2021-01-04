@@ -25,11 +25,11 @@ int LongLong::toInt() const {
     return n;
 }
 
-std::string LongLong::toHex() const {
-    std::string digits = "0123456789ABCDEF";
+string LongLong::toHex() const {
+    string digits = "0123456789ABCDEF";
     long length = num.length();
-    std::string result = "";
-    std::vector<long> nibbles;
+    string result = "";
+    vector<long> nibbles;
     for (long i = 0; i < length; i++) {
         char d = num[i];
         nibbles.push_back((d >= '0' && d <= '9')
@@ -61,9 +61,9 @@ std::string LongLong::toHex() const {
     return result;
 }
 
-std::string LongLong::toBinary() const {
+string LongLong::toBinary() const {
     LongLong res = *this;
-    auto oddsToOne = [](const std::string& s) {
+    auto oddsToOne = [](const string& s) {
         if (s.back() == '1' || s.back() == '3' || s.back() == '5' ||
             s.back() == '7' || s.back() == '9')
             return 1;
@@ -77,14 +77,14 @@ std::string LongLong::toBinary() const {
         for (auto ch : s) {
             auto new_dgt = ((int)(ch)-(int)('0')) / 2 + add;
             new_s += std::to_string(new_dgt);
-            add = oddsToOne(std::string{ ch }) * 5;
+            add = oddsToOne(string{ ch }) * 5;
         }
 
         if (new_s != "0" && new_s.front() == '0') new_s.erase(0, 1);
 
         return new_s;
     };
-    std::string stack;
+    string stack;
     if (res.num == "0")
         stack = "0";
     else {
@@ -136,18 +136,16 @@ LongLong LongLong::pow_mod(const LongLong& p, const LongLong& mod) {
     return res.barretReduction(mod, z, 10);
 }
 
-LongLong gcd(const LongLong& n1, const LongLong& n2) {
-    if (n1 % n2 == LongLong(0)) {
-        return n2;
-    }
-    if (n2 % n1 == LongLong(0)) {
+
+LongLong gcd(LongLong n1, LongLong n2) {
+    if (n2 == LongLong(0)) {
         return n1;
     }
-    if (n1 > n2) {
-        return gcd(n1 % n2, n2);
+    else {
+        return gcd(n2, (n1 % n2));
     }
-    return gcd(n1, n2 % n1);
 }
+
 
 bool LongLong::operator==(const LongLong& other) const
 {
@@ -176,8 +174,7 @@ LongLong LongLong::getZ(const LongLong& mod) {
     return z;
 }
 
-LongLong LongLong::barretReduction(const LongLong& mod, LongLong z,
-    LongLong base)
+LongLong LongLong::barretReduction(const LongLong& mod, LongLong z,LongLong base)
 {
     LongLong r(0);
 
@@ -187,11 +184,11 @@ LongLong LongLong::barretReduction(const LongLong& mod, LongLong z,
     }
     else {
         LongLong k = mod.num.length();
-        LongLong q = (this->abs() / base.pow(k - LongLong(1)) * z) /
-            base.pow(k + LongLong(1));
+        LongLong q = (this->abs() / base.pow(k - LongLong(1)) * z) / base.pow(k + LongLong(1));
         LongLong r1 = this->abs() % base.pow(k + LongLong(1));
         LongLong r2 = (q * mod) % base.pow(k + LongLong(1));
-        if (r1 >= r2) {
+        if (r1 >= r2) 
+        {
             r = r1 - r2;
         }
         else {
@@ -582,6 +579,9 @@ LongLong LongLong::pow2() { return this->pow(LongLong(2)); }
 LongLong LongLong::operator/(const LongLong& other) const {
     LongLong a = *this;
     LongLong b = other;
+    if (other == LongLong(1)) {
+        return *this;
+    }
 
     bool sign = false;
     if (a.isNegative != b.isNegative) {
@@ -641,7 +641,8 @@ LongLong LongLong::operator%(const LongLong& other) const {
 
 LongLong::~LongLong() {}
 
-LongLong lcm(const LongLong& n1, const LongLong& n2)
+
+LongLong lcm(LongLong n1, LongLong n2)
 {
     return n1 * n2 / gcd(n1, n2);
 }
